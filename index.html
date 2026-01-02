@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Aktivitas & Karier 2026</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header>
+  <h1>🔥 Aktivitas & Karier 2026</h1>
+  <div class="header-right">
+    <input type="date" id="datePicker">
+    <button onclick="exportData()">⬇ Export</button>
+    <label class="import">
+      ⬆ Import
+      <input type="file" hidden onchange="importData(event)">
+    </label>
+  </div>
+</header>
+
+<main class="container dashboard">
+
+  <!-- DAILY RULES (TINGGI BESAR) -->
+  <section class="card tall">
+    <h2>🔥 Daily Success Rules</h2>
+
+    <label>Push Up (Target 50x)</label>
+    <input id="pushup" type="number">
+
+    <label>Income Harian (Target Rp200.000)</label>
+    <input id="income" type="number">
+
+    <label>Upload Konten</label>
+    <input id="platform" placeholder="Platform">
+    <input id="judul" placeholder="Judul">
+
+    <label>Seriously Education</label>
+    <input id="belajar" placeholder="Belajar apa">
+    <input id="durasi" type="number" placeholder="Durasi (menit)">
+
+    <label>Healthy Lifestyle</label>
+    <textarea id="healthy"></textarea>
+
+    <label>Limit Entertainment (menit)</label>
+    <input id="hiburan" type="number">
+    <select id="statusHiburan">
+      <option>TERKONTROL</option>
+      <option>BERLEBIHAN</option>
+    </select>
+  </section>
+
+  <!-- CATATAN -->
+  <section class="card medium">
+    <h2>🎯 Catatan Hari Ini</h2>
+    <textarea id="notes"></textarea>
+  </section>
+
+  <!-- KARIER -->
+  <section class="card medium">
+    <h2>📺 Karier Konten YouTube</h2>
+    <textarea id="channels"></textarea>
+  </section>
+
+  <!-- IDE -->
+  <section class="card short">
+    <h2>💡 Ide Konten / Rencana</h2>
+    <textarea id="ideas"></textarea>
+  </section>
+
+  <button class="save">💾 Simpan Hari Ini</button>
+
+</main>
+
+<footer>
+  “Saya tidak mencari motivasi, saya membangun disiplin.”
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
